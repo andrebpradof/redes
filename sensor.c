@@ -21,43 +21,6 @@ int random_num(){
     return random_number;
 }
 
-int clientConfig()
-{
-    // Descritor do cliente
-    int clienteSockfd;
-    // Estrutura do Cliente
-    struct sockaddr_in serv_addr;
-    // Tamanho da estrutura
-    socklen_t addrlen = sizeof(serv_addr);
-
-    // Socket familia TCP declarado SOCK_STREAM e criado
-    clienteSockfd = socket(PF_INET, SOCK_STREAM, IPPROTO_TCP);
-    if (clienteSockfd < 0)
-    {
-        printf("\nErro no Socket");
-        exit(1);
-    }
-    // Zera a estrutura
-    bzero((char *)&serv_addr, sizeof(serv_addr));
-    // Seta a familia
-    serv_addr.sin_family = AF_INET;
-    // Define o IP nesse caso o localhost
-    serv_addr.sin_addr.s_addr = inet_addr("127.0.0.1");
-    // Define a porta de conexao
-    serv_addr.sin_port = htons(6881);
-    // Faz a conexao com o servidor
-    if (connect(clienteSockfd, (struct sockaddr *)&serv_addr, addrlen) < 0)
-    {
-        printf("\nErro no Socket");
-        exit(1);
-    }
-    else{
-        printf("\nConexão estabelecida");
-    }
-    return clienteSockfd;
-}
-
-
 int main()
 {
     long int port;
