@@ -1,3 +1,15 @@
+//////////////////////////////////////////////////////////////
+//  SSC0641 - Redes de Computadores (2020)                  //
+//  Trabalho 1							                    //
+//                                                          //
+//  Alunos:                                                 //
+//  André Baconcelo Prado Furlanetti - Nº USP: 10748305     //
+//	Daniel Bernardes Pozzan 		 - Nº USP: 10716608		//
+//  Diego da Silva Parra             - Nº USP: 10716550     //
+//  Mateus Fernandes Doimo           - Nº USP: 10691971     //
+//	Otávio Cury Pontes 				 - Nº USP: 10716525		//
+//////////////////////////////////////////////////////////////
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
