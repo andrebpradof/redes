@@ -23,8 +23,8 @@ Otávio Cury Pontes - Nº USP: 10716525</br>
 <h3>Executar:</h3>
 
 #### Compilar programa:
-`$ cd ./src`
-`$ make clean`
+`$ cd ./src`<br>
+`$ make clean`<br>
 `$ make`
 
 #### Executar o simulador:
