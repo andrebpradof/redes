@@ -1,3 +1,4 @@
-/.vscode
-/cliente
-/servidor
+.dist
+desktop.ini
+.vscode
+*.ini
